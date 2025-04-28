@@ -6,9 +6,156 @@
   </head>
   <body style="font-family:Arial, Helvetica, sans-serif;">
     <script text="text/javascript">
-        const mouse_price=750;
-        const keyboard_price=1500;
-        
+        const mouse_price = 750;
+        const keyboard_price = 1500;
+        const monitor = 12000;
+        const motherboard = 4000;
+        const harddrive = 2800;
+        const table = 1500;
+
+        let product = prompt("Enter the product you want to buy (mouse, keyboard, monitor, motherboard, harddrive, table):").toLowerCase();
+        let quantity = parseInt(prompt("Enter the quantity you want to buy:"));
+        let student = prompt("Are you a student? (yes/no)").toLowerCase();
+
+        if (product == "mouse") {
+          let total_price = mouse_price * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = mouse_price * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        } else if (product == "keyboard") {
+          let total_price = keyboard_price * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = keyboard_price * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        } else if (product == "monitor") {
+          let total_price = monitor * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = monitor * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        } else if (product == "motherboard") {
+          let total_price = motherboard * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = motherboard * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        } else if (product == "harddrive") {
+          let total_price = harddrive * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = harddrive * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        } else if (product == "table") {
+          let total_price = table * quantity;
+          document.write("Product Price: " + total_price);
+
+          if (total_price > 1000) {
+            let discount = total_price * 0.1;
+            total_price -= discount;
+            document.write("<br>Discount: " + discount);
+            document.write("<br>Discount Applied: " + total_price);
+
+            if (student == "yes") {
+              let student_discount = table * 0.05;
+              total_price -= student_discount;
+              document.write("<br>Student Discount: " + student_discount);
+
+              if (total_price > 5000) {
+                let tax = total_price * 0.08;
+                total_price += tax;
+                document.write("<br>Tax: " + tax);
+              }
+            } 
+          }
+          document.write("<br>Total Price: " + total_price);
+        }
     </script>
   </body>
 </html>
